@@ -34,6 +34,8 @@ class EngineManager {
 
         bool Init(const Options& options);
 
+        bool Destory();
+
         bool Process(const Request* request, Response* response, std::function<void()> done);
         int get_id() const;
         int get_channel_id() const;
